@@ -9,7 +9,7 @@
         android:title="게시글" />
 
     <item
-        android:id="@+id/navigation_my_room"
+        android:id="@+id/navigation_search"
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:title="검색" />
