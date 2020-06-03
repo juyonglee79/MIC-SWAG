@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_posting"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="게시글" />
+
+    <item
+        android:id="@+id/navigation_my_room"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="검색" />
+    <item
+        android:id="@+id/navigation_add_post"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="추가" />
+
+    <item
+        android:id="@+id/navigation_alert"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="알림" />
+
+    <item
+        android:id="@+id/navigation_my_page"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="마이페이지" />
+
+</menu>
