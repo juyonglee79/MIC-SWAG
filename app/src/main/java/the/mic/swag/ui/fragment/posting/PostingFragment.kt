@@ -5,12 +5,14 @@ import android.view.View
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModelProviders
 import com.android.dutchman.util.DataBindingFragment
+import dsm.android.v3.presentation.di.scope.ActivityScope
 import the.mic.swag.R
 import the.mic.swag.databinding.FragmentPostBinding
 import the.mic.swag.domain.repository.posting.PostingRepository
 import the.mic.swag.presentation.viewmodel.posting.PostingViewModel
 import the.mic.swag.presentation.viewmodel.posting.PostingViewModelFactory
 
+@ActivityScope
 class PostingFragment: DataBindingFragment<FragmentPostBinding>(), PostingRepository {
 
     override val layoutId: Int
