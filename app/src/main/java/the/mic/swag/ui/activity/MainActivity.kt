@@ -1,9 +1,8 @@
-package the.mic.swag
+package the.mic.swag.ui.activity
 
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.MutableLiveData
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -11,6 +10,7 @@ import io.reactivex.subjects.BehaviorSubject
 import io.reactivex.subjects.Subject
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
+import the.mic.swag.R
 import the.mic.swag.ui.fragment.alert.AlertFragment
 import the.mic.swag.ui.fragment.mypage.MyPageFragment
 import the.mic.swag.ui.fragment.posting.PostingFragment
