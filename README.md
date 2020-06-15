@@ -8,3 +8,4 @@ JAVA를 기본 언어로 사용합니다
 
 
 Trello : https://trello.com/b/8b54ONMq/mic-swag
+자세히 보기 : https://www.notion.so/MIC_SWAG-30f26deda7654b4e80c2b87eeda91390
