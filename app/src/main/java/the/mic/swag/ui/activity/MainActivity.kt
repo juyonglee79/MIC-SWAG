@@ -1,4 +1,4 @@
-package the.mic.swag.ui.activity.main
+package the.mic.swag.ui.activity
 
 
 import android.os.Bundle
