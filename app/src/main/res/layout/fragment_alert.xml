@@ -42,6 +42,35 @@
         tools:itemCount="3"
         tools:listitem="@layout/item_alert_follow" />
 
+    <View
+        android:id="@+id/alert_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/colorGray"
+        app:layout_constraintTop_toBottomOf="@+id/alert_today_rv" />
+
+    <TextView
+        android:id="@+id/alert_week_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nanumsquarebold"
+        android:text="이번 주"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_week_tv"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_alert_post_like"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
