@@ -1,11 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <TextView
+        android:id="@+id/mypage_title_tv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="45dp"
+        android:fontFamily="@font/nanumsquarebold"
+        android:gravity="center"
+        android:text="twoweekable"
+        android:textColor="@color/colorBtnGray"
+        android:textSize="12sp"
+        android:background="@drawable/back_stroke_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+    <ImageView
+        android:id="@+id/mypage_profile_img"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_round_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_title_tv" />
+
+    <View
+        android:id="@+id/mypage_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mypage_profile_img"
+        app:layout_constraintTop_toTopOf="@+id/mypage_profile_img" />
+
+    <TextView
+        android:id="@+id/mypage_post_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/nanumsquareregular"
+        android:text="180"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_guideline"
+        app:layout_constraintEnd_toStartOf="@id/mypage_follower_num_tv"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/mypage_profile_img" />
+
+    <TextView
+        android:id="@+id/mypage_post_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/nanumsquareregular"
+        android:text="게시글"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_post_num_tv"
+        app:layout_constraintStart_toStartOf="@+id/mypage_post_num_tv"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_guideline" />
+
+    <TextView
+        android:id="@+id/mypage_follower_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/nanumsquareregular"
+        android:text="754"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_guideline"
+        app:layout_constraintEnd_toStartOf="@id/mypage_following_num_tv"
+        app:layout_constraintStart_toEndOf="@+id/mypage_post_num_tv" />
+
+    <TextView
+        android:id="@+id/mypage_follower_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/nanumsquareregular"
+        android:text="팔로워"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_follower_num_tv"
+        app:layout_constraintStart_toStartOf="@+id/mypage_follower_num_tv"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_guideline" />
+
+    <TextView
+        android:id="@+id/mypage_following_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/nanumsquareregular"
+        android:text="0"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/mypage_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mypage_follower_num_tv" />
+
+    <TextView
+        android:id="@+id/mypage_following_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/nanumsquareregular"
+        android:text="팔로잉"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_following_num_tv"
+        app:layout_constraintStart_toStartOf="@+id/mypage_following_num_tv"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_guideline" />
+
+    <TextView
+        android:id="@+id/mypage_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nanumsquarebold"
+        android:text="이주용"
+        android:textColor="@color/colorBlack"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_profile_img" />
+
+    <TextView
+        android:id="@+id/mypage_context_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumsquareregular"
+        android:text="수린이 사랑해"
+        android:textColor="@color/colorBlack"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_name_tv" />
+
+    <TextView
+        android:id="@+id/mypage_follow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/nanumsquarebold"
+        android:gravity="center"
+        android:text="프로필 변경"
+        android:textColor="@color/colorBlack"
+        android:textSize="10sp"
+        android:background="@drawable/back_radius_gray_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_context_tv" />
+
+    <FrameLayout
+        android:id="@+id/mypage_my_post_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_follow" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
