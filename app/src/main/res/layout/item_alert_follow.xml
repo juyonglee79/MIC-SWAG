@@ -1,45 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="wrap_content">
 
-    <View
-        android:id="@+id/view"
+    <ImageView
+        android:id="@+id/item_profile_img"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/back_round_profile"
+        android:src="@drawable/back_round_profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/item_context_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:fontFamily="@font/nanumsquareregular"
         android:textColor="@color/colorGray"
         android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        tools:text="no_see_no_see님이 회원님을 팔로우하기 시작했습니다."/>
+        app:layout_constraintBottom_toBottomOf="@+id/item_profile_img"
+        app:layout_constraintEnd_toStartOf="@+id/item_follow_btn"
+        app:layout_constraintStart_toEndOf="@+id/item_profile_img"
+        app:layout_constraintTop_toTopOf="@+id/item_profile_img"
+        tools:text="no_see_no_see님이 회원님을 팔로우하기 시작했습니다." />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/item_follow_btn"
         android:layout_width="70dp"
         android:layout_height="20dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/back_radius_btn_blue"
+        android:background="@drawable/back_radius_blue_btn"
+        android:fontFamily="@font/nanumsquarebold"
         android:gravity="center"
         android:text="팔로우"
         android:textColor="@color/colorWhite"
@@ -49,4 +52,4 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
